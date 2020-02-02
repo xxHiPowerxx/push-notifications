@@ -162,11 +162,10 @@ function initializeUI() {
 
     updateBtn();
   });
+  navigator.serviceWorker.register("sw.js").then(function(swReg) {
+    console.log("Service Worker is registered", swReg);
+
+    swRegistration = swReg;
+    initializeUI();
+  });
 }
-
-navigator.serviceWorker.register("sw.js").then(function(swReg) {
-  console.log("Service Worker is registered", swReg);
-
-  swRegistration = swReg;
-  initializeUI();
-});
