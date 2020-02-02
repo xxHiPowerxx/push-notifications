@@ -1,4 +1,4 @@
-View the App here https://xxhipowerxx.github.io/push-notifications/.
+View the App here https://xxhipowerxx.github.io/push-notifications/app.
 
 ## License
 
