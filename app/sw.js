@@ -24,13 +24,14 @@ self.addEventListener("push", function(event) {
   console.log("[Service Worker] Push Received.");
   console.log(`[Service Worker] Push had this data: "${event.data.text()}"`);
 
-  const notifImage = "https://www.lifezynth.com/u/E/pk?key=guest";
+  const icon = "https://www.lifezynth.com/u/E/pk?key=guest";
+  const badge = "./images/talisman_courage_transparent_500.svg";
 
   const title = "You Have A New Message!";
   const options = {
     body: "Ron Cichy sent you a message.",
-    icon: notifImage,
-    badge: notifImage
+    icon: icon,
+    badge: badge
   };
 
   const notificationPromise = self.registration.showNotification(
