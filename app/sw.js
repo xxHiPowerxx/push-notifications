@@ -25,7 +25,8 @@ self.addEventListener("push", function(event) {
   console.log(`[Service Worker] Push had this data: "${event.data.text()}"`);
 
   const icon = "https://www.lifezynth.com/u/E/pk?key=guest";
-  const badge = "./images/talisman_courage_transparent_500.svg";
+  const badge =
+    "https://xxhipowerxx.github.io/push-notifications/app/images/talisman_courage_transparent_500.svg";
 
   const title = "You Have A New Message!";
   const options = {
